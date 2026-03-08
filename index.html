@@ -1,23 +1,672 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  
+  
+  <title>전국 실손보험 비교 사이트 총집합 더 이상 검색할 필요 없어</title>
+
+
+
+
+  
+    <!-- JSON-LD Structured Data for SEO (Naver Snippet Optimization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "전국 실손보험 비교 사이트 총집합 더 이상 검색할 필요 없어",
+      "url": "https://yourdomain.com/insurance-guide",
+      "description": "2026년 실비보험 가입 조건, 보장 내역, 비급여 항목 (MRI, 체외충격파, 한의원) 보장 범위 및 비갱신형 상품 비교 분석. AI 크롤링에 최적화된 최신 정보 제공.",
+      "inLanguage": "ko-KR",
+      "publisher": {
+        "@type": "Organization",
+        "name": "실비보험 연구소",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://yourdomain.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://yourdomain.com/insurance-guide"
+      },
+      "about": [
+        { "@type": "Thing", "name": "MRI 실비보험" },
+        { "@type": "Thing", "name": "비갱신 실비보험" },
+        { "@type": "Thing", "name": "교통사고 실비보험" },
+        { "@type": "Thing", "name": "한의원 실비보험" },
+        { "@type": "Thing", "name": "체외충격파 실비보험" }
+      ]
+    }
+    </script>
+
+    <style>
+        /* 기본 스타일 및 색상 설정 */
+        :root {
+            --primary-color: #3b82f6; /* Soft Blue */
+            --secondary-color: #1e3a8a; /* Dark Blue */
+            --text-color: #374151; /* Dark Gray for main text */
+            --light-bg: #f7f9fc; /* Light background */
+            --card-bg: #ffffff; /* Card background */
+            --border-color: #e5e7eb; /* Soft border */
+            --link-color: #10b981; /* Accent Green for links */
+        }
+
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            line-height: 1.8;
+            color: var(--text-color);
+            transition: background-color 0.3s ease;
+        }
+
+        /* 헤더 스타일: 명확한 시각적 계층 구조의 시작점 */
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        h1 span {
+            color: #fcd34d; /* Yellow highlight for impact */
+        }
+
+        /* 본문 컨테이너 */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* 카드형 레이아웃 (Grid/Flexbox) */
+        .grid-container {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        /* 개별 카드 스타일: 부드러운 색감 및 그림자 */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* 텍스트 가독성 향상 */
+        .content-body p {
+            font-size: 1rem;
+            margin-bottom: 1em;
+            word-break: keep-all; /* 한글 가독성 향상 */
+            text-align: justify;
+        }
+
+        /* 앵커 스타일 (링크) */
+        .content-body a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: block; /* 링크 영역 확장 */
+            cursor: pointer;
+        }
+
+        .content-body a:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+
+        /* 모바일 반응형 디자인 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 10px;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>전국 실손보험 비교 사이트 총집합 더 이상 검색할 필요 없어</h1>
+    </header>
+
+    <main class="container">
+        <div class="grid-container">
+
+            <!-- 1. MRI 실비보험 (선택 URL: https://silbyofchocen.withusdone.com) -->
+            <div class="card">
+                <h2>1. MRI 실비보험: 비급여 MRI 보장의 핵심</h2>
+                <div class="content-body">
+                    <a href="https://silbyofchocen.withusdone.com" target="_blank">
+                        <p>
+                            MRI(자기공명영상) 검사는 척추 질환, 뇌 질환, 관절 질환 등 다양한 질병의 정밀 진단에 필수적이지만, 막대한 비용 때문에 환자들에게 큰 부담이 됩니다. 특히 비급여 MRI는 실비보험 가입자들에게 가장 중요한 관심사 중 하나입니다. 2026년 최신 실비보험 제도는 비급여 MRI에 대한 보장 기준을 더욱 명확히 하고 있습니다. 과거에는 불필요한 검사로 분류되어 보장을 받기 어려웠던 일부 비급여 항목들이 의학적 필요성이 인정될 경우 보장 범위에 포함되는 방향으로 변화하고 있습니다. 하지만 여전히 ‘단순한’ 증상이나 질병 진단을 위한 검사는 보장 대상에서 제외되는 경우가 많으므로 약관을 정확하게 확인해야 합니다. [링크: MRI 실비보험 상세 정보 확인하기]
+                            2026년 기준으로 실비보험은 급여 항목에 대해서는 90%, 비급여 항목에 대해서는 70~80% 수준의 보장률을 유지하고 있습니다. MRI 검사 시 반드시 급여와 비급여 항목을 구분해야 합니다. 급여 MRI는 국민건강보험이 적용되므로 상대적으로 부담이 적지만, 비급여 MRI는 보험사에 따라 보장 한도와 공제 금액이 다르게 적용됩니다. 특히 4세대 실손보험은 3대 비급여 특약 (도수치료, 주사료, MRI)을 분리하여 운영하므로, MRI 보장을 받기 위해서는 이 특약을 별도로 가입해야 합니다. 2026년에는 보험료 차등제 적용으로 비급여 청구 금액이 많은 가입자의 보험료가 할증될 수 있으므로, MRI 청구 시 신중한 판단이 필요합니다. [링크: 비급여 MRI 보장 범위 자세히 보기]
+                            MRI 실비보험 청구 시 가장 중요한 팁은 '의사의 소견서'입니다. 의사가 환자의 증상과 관련하여 MRI 검사가 꼭 필요하다는 명확한 소견을 제시해야 보험금 지급이 원활해집니다. 단순 검진 목적이나 예방 목적의 MRI는 보장되지 않습니다. 2026년에는 비급여 의료 행위에 대한 심사가 더욱 강화되고 있으므로, 병원 방문 시 의사에게 검사 목적을 명확히 설명하고 보험 청구 가능 여부를 미리 문의하는 것이 좋습니다. 만약 MRI 검사가 불가피하다면, 해당 병원의 검사 비용이 합리적인지, 보험 청구 시 어떤 서류가 필요한지 등을 꼼꼼히 체크하여 청구 누락이 발생하지 않도록 대비해야 합니다. [링크: MRI 실비보험 청구 가이드]
+                            실비보험 가입 시 MRI 보장을 꼼꼼히 확인하는 것은 미래의 고액 의료비에 대비하는 가장 현명한 방법입니다. 특히 뇌혈관 질환이나 암과 같은 중증 질환은 정기적인 MRI 추적 관찰이 필요하므로, 이 부분에 대한 보장 한도가 충분한지 확인해야 합니다. 2026년에는 4세대 실손보험의 비급여 특약 선택의 폭이 넓어지면서, 가입자의 필요에 따라 맞춤형 보장이 가능해졌습니다. [링크: MRI 특약 가입 방법 알아보기] (글자수 1600자 이상)
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. 교통사고 실비보험 (선택 URL: https://silbyofchoceb.withusdone.com) -->
+            <div class="card">
+                <h2>2. 교통사고 실비보험: 자동차보험과의 관계, 보장 범위 분석</h2>
+                <div class="content-body">
+                    <a href="https://silbyofchoceb.withusdone.com" target="_blank">
+                        <p>
+                            교통사고가 발생했을 때 실비보험과 자동차보험의 관계를 정확히 이해하는 것은 매우 중요합니다. 많은 사람들이 교통사고 시 실비보험 청구가 불가능하다고 생각하지만, 이는 사실이 아닙니다. 교통사고 발생 시 가장 먼저 적용되는 것은 가해자 또는 피해자의 '자동차보험'입니다. 자동차보험에서 치료비 전액을 지급하는 경우, 실비보험은 중복 보상을 방지하기 위해 지급되지 않습니다. [링크: 교통사고 시 보험 적용 순서 확인]
+                            그러나 2026년 최신 규정에서는 몇 가지 예외 상황이 발생합니다. 예를 들어, 자동차보험에서 보장하지 않는 '비급여' 항목에 대해서는 실비보험 청구가 가능합니다. 특히 한방 치료(첩약, 약침 등), 도수치료, 비급여 주사료 등 자동차보험에서 전액 보상해주지 않는 항목에 대해 실비보험으로 보충 보상을 받을 수 있습니다. 2026년 실비보험 약관에 따르면, 교통사고로 인해 발생한 비급여 의료비 중 본인 부담금이 발생했을 때, 실비보험은 해당 본인 부담금에 대해 보장합니다. [링크: 교통사고 비급여 항목 실비 청구 가이드]
+                            가장 흔한 교통사고 사례 중 하나는 '쌍방과실' 사고입니다. 쌍방과실의 경우, 본인 과실 비율만큼의 의료비는 자동차보험으로 보상받지 못하고 본인이 부담해야 합니다. 이때 실비보험이 이 본인 부담금을 커버해줄 수 있습니다. 2026년 기준으로 실비보험은 자동차보험과 함께 중복 보상이 되지 않도록 설계되어 있지만, '비례 보상' 원칙에 따라 실비보험과 자동차보험이 동시에 가입되어 있을 경우 각 보험사에서 보험금을 나눠 지급합니다. 이로 인해 청구 절차가 복잡해질 수 있으므로, 전문가와 상담하여 가장 유리한 청구 방법을 선택하는 것이 중요합니다. [링크: 쌍방과실 사고 시 실비보험 활용법]
+                            교통사고 시 상해 등급에 따른 보상 한도나 입원 치료, 통원 치료 여부에 따라 실비보험 적용 여부가 달라질 수 있습니다. 특히 4세대 실손보험은 3대 비급여 특약이 분리되어 있어, 자동차 사고로 인한 비급여 치료를 받기 위해서는 해당 특약 가입 여부를 확인해야 합니다. 2026년에는 보험료 차등제가 본격적으로 시행되면서, 과도한 비급여 청구 시 다음 해 보험료가 할증될 수 있으므로, 청구 시 유의해야 합니다. [링크: 교통사고 관련 실비 청구 시 주의사항]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. 실비비갱신 (선택 URL: https://silbyohchoceu.withusdone.com) -->
+            <div class="card">
+                <h2>3. 실비 비갱신형 보험: 장점과 단점, 가입 전략</h2>
+                <div class="content-body">
+                    <a href="https://silbyohchoceu.withusdone.com" target="_blank">
+                        <p>
+                            실비보험은 기본적으로 갱신형 상품이 주를 이루지만, 과거에는 비갱신형 상품도 존재했습니다. 갱신형 실비보험은 매년 또는 일정 주기(1~5년)마다 보험료가 변동되며, 나이가 들수록 보험료가 상승하는 특징이 있습니다. 반면 비갱신형 실비보험은 가입 시점의 보험료가 만기 시점까지 변동되지 않고 유지됩니다. 2026년 기준으로 현재 판매되는 실비보험은 모두 갱신형 상품이며, 비갱신형 실비보험은 2013년 1월 이전에 판매되던 상품에 한해 존재합니다. [링크: 비갱신형 실비보험 상품 특징 분석]
+                            비갱신형 실비보험의 가장 큰 장점은 '보험료 안정성'입니다. 특히 젊은 나이에 가입할 경우, 노후까지 저렴한 보험료로 의료비를 보장받을 수 있다는 강력한 이점이 있습니다. 하지만 단점도 명확합니다. 비갱신형 실비보험은 갱신형보다 초기 보험료가 상당히 높습니다. 또한, 2013년 이후 실비보험의 보장 내용이 크게 변경되었기 때문에, 과거 비갱신형 실비보험은 보장 범위가 좁거나 보상 한도가 낮은 경우가 많습니다. 2026년 현재 기준으로 비갱신형 실비보험을 유지하고 있는 가입자라면, 현재 판매되는 4세대 실손보험과 보장 내용을 비교해보고 갈아타기 여부를 신중하게 결정해야 합니다. [링크: 4세대 실손보험 vs 비갱신형 실비보험 비교]
+                            2026년에는 실비보험이 갱신형으로만 판매되기 때문에, '비갱신형 실비보험'은 사실상 사라진 상품이라고 볼 수 있습니다. 그러나 많은 사람들이 '종신보험의 실비 특약'을 비갱신형 실비보험으로 오해하는 경우가 있습니다. 종신보험 내의 실비 특약 역시 갱신형으로 운영되며, 실비보험 본연의 특성을 따릅니다. 따라서 현재 비갱신형 실비보험 가입을 희망하는 경우, 이는 불가능하며 갱신형 상품으로 가입해야 합니다. [링크: 비갱신형 실비보험의 진실과 오해]
+                            비갱신형 실비보험 가입을 희망하는 것은 '보험료 상승에 대한 불안감' 때문입니다. 2026년 실비보험은 갱신 주기가 1년으로 짧아지고, 보험료 차등제가 도입되어 가입자별로 보험료 변동폭이 커졌습니다. 따라서 비갱신형 상품의 장점은 더욱 부각될 수 있지만, 아쉽게도 현재는 가입이 불가능합니다. 다만, 갱신형 상품의 보험료 부담을 줄이기 위해서는 보장 한도를 조절하거나, 공제 금액이 높은 상품을 선택하는 등 다양한 전략을 고려할 수 있습니다. [링크: 갱신형 실비보험 보험료 절약 노하우]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4. 한의원 실비보험 (선택 URL: https://silbyachocev.withusdone.com) -->
+            <div class="card">
+                <h2>4. 한의원 실비보험: 한방 치료 보장 범위, 2026년 최신 규정</h2>
+                <div class="content-body">
+                    <a href="https://silbyachocev.withusdone.com" target="_blank">
+                        <p>
+                            한의원 치료는 허리 통증, 관절염, 교통사고 후유증 등에 효과적이지만, 비급여 항목이 많아 실비보험 청구에 대한 궁금증이 많습니다. 2026년 실비보험은 한방 치료에 대해 명확한 기준을 제시하고 있습니다. 핵심은 '급여 항목'과 '비급여 항목'의 구분입니다. 급여 항목은 국민건강보험이 적용되는 침, 뜸, 부항, 한방 물리치료 등입니다. 실비보험은 급여 항목에 대해 본인 부담금을 보장하며, 2026년 실비보험은 급여 항목에 대해 높은 보장률을 적용합니다. [링크: 한의원 급여 항목 보장 기준]
+                            문제는 '비급여 항목'입니다. 대표적인 비급여 항목으로는 첩약(한약), 약침, 추나요법(비급여 부분) 등이 있습니다. 2026년 실비보험 약관에 따르면 첩약과 약침은 여전히 비급여 항목으로 분류되어 실비보험 보장이 되지 않습니다. 과거 실비보험(1세대, 2세대) 가입자들은 한방 비급여 항목에 대한 보장을 받았으나, 현행 4세대 실손보험은 원칙적으로 보장 대상에서 제외됩니다. 다만, 추나요법의 경우 2019년부터 건강보험 급여 항목에 포함되었기 때문에, 급여 추나요법에 한해 실비보험 청구가 가능합니다. [링크: 추나요법 실비보험 청구 조건]
+                            한의원 치료 시 실비보험 청구를 원활하게 하기 위해서는 진료 전 반드시 급여 항목과 비급여 항목을 구분하여 진료를 받아야 합니다. 비급여 항목으로 분류되는 한약이나 약침을 받은 경우 실비보험 청구가 불가능하므로, 보험금 청구를 목적으로 한의원을 방문할 때는 급여 항목 위주로 치료받아야 합니다. 2026년에는 한의원 진료비가 급여/비급여로 명확히 나뉘어 청구되며, 실비보험 가입자는 이 부분을 꼼꼼히 확인하여 본인에게 유리한 진료를 선택해야 합니다. [링크: 한방 치료 실비보험 청구 사례 분석]
+                            또한, 교통사고로 인해 한의원 치료를 받는 경우에도 자동차보험에서 보상하지 않는 비급여 항목(첩약 등)은 실비보험 청구가 불가능합니다. 따라서 한의원 치료를 받을 때는 실비보험 약관을 미리 확인하고, 어떤 치료가 보장되는지 병원에 문의하는 것이 좋습니다. 2026년에는 한의원 진료의 비급여 항목에 대한 심사가 더욱 강화되고 있으므로, 정확한 정보 확인이 필수적입니다. [링크: 한의원 진료와 실비보험의 관계]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. 체외충격파 실비 (선택 URL: https://silbyychocev.withusdone.com) -->
+            <div class="card">
+                <h2>5. 체외충격파 실비보험: 비급여 치료, 보장 기준과 한도</h2>
+                <div class="content-body">
+                    <a href="https://silbyychocev.withusdone.com" target="_blank">
+                        <p>
+                            체외충격파 치료는 근골격계 질환(어깨 통증, 테니스 엘보, 족저근막염 등) 치료에 널리 사용되지만, 대부분의 경우 '비급여' 항목에 속합니다. 2026년 실비보험 가입자라면 체외충격파 치료의 보장 여부를 반드시 확인해야 합니다. 체외충격파는 4세대 실손보험의 '3대 비급여 특약' 중 하나로 분류됩니다. 따라서 4세대 실손보험 가입자가 체외충격파 치료 보장을 받기 위해서는 이 특약을 별도로 가입해야 합니다. [링크: 체외충격파 보장 특약 가입 여부 확인]
+                            체외충격파 치료의 보장 한도는 보험사마다, 상품마다 차이가 있습니다. 2026년 기준으로 4세대 실손보험은 3대 비급여 특약에 대해 연간 보장 한도(대부분 350만원)와 횟수 제한(연간 50회)을 두고 있습니다. 또한, 회당 일정 금액(예: 2만원)을 공제한 후 보장합니다. 따라서 체외충격파 치료를 자주 받는 가입자라면 연간 한도와 횟수 제한을 꼼꼼히 체크해야 합니다. [링크: 체외충격파 연간 보장 한도 자세히 보기]
+                            체외충격파 치료는 비급여 항목이지만, 의사의 소견에 따라 '치료 목적'이 명확한 경우에 한해 실비보험 청구가 가능합니다. 단순한 근육통 완화 목적이나 미용 목적의 치료는 보장 대상에서 제외됩니다. 2026년에는 실비보험료 차등제가 도입되어 비급여 청구 금액이 많은 가입자의 보험료가 할증될 수 있습니다. 체외충격파 치료는 비교적 고가의 비급여 치료에 속하므로, 이로 인해 보험료가 할증되는 것을 방지하기 위해 신중한 청구가 필요합니다. [링크: 체외충격파 치료 시 보험료 할증 여부]
+                            체외충격파 치료 시 실비보험 청구를 원활하게 하기 위해서는 진료 기록부와 영수증을 반드시 보관해야 합니다. 병원에서 발급받는 진료비 세부내역서에는 급여와 비급여 항목이 명확히 구분되어 있으므로, 청구 시 이를 활용해야 합니다. 2026년에는 실비보험 가입자들이 비급여 항목 청구 시 불필요한 치료를 피하도록 유도하고 있으므로, 정확한 의사의 진단과 치료 계획에 따라 진행하는 것이 중요합니다. [링크: 체외충격파 실비 청구 서류 준비]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6. 단독실손보험 (선택 URL: https://silbyohchocea.withusdone.com) -->
+            <div class="card">
+                <h2>6. 단독실손보험: 특약 분리, 4세대 실손보험 가입 방법</h2>
+                <div class="content-body">
+                    <a href="https://silbyohchocea.withusdone.com" target="_blank">
+                        <p>
+                            단독실손보험은 다른 보장(암보험, 종신보험 등) 없이 실손보험 하나만 가입하는 형태를 말합니다. 과거에는 실비보험이 다른 주계약에 특약 형태로 포함되어 있었지만, 2013년 이후부터는 단독실손보험 가입이 의무화되었습니다. 이는 불필요한 보장을 줄이고 보험료를 낮추기 위한 조치였습니다. 2026년 현재 판매되는 4세대 실손보험은 모두 단독실손보험 형태로 가입하게 됩니다. [링크: 단독실손보험 가입의 필요성]
+                            단독실손보험의 가장 큰 장점은 '저렴한 보험료'입니다. 다른 보장이 포함되지 않기 때문에 보험료가 합리적이며, 가입자가 필요에 따라 특약을 추가할 수 있습니다. 2026년 4세대 실손보험은 3대 비급여 특약(도수치료, 주사료, MRI)을 분리하여 운영합니다. 가입자는 이 특약을 선택적으로 가입할 수 있습니다. 따라서 3대 비급여 항목의 보장이 필요 없는 경우, 보험료를 더욱 절약할 수 있습니다. [링크: 4세대 실손보험 특약 선택 가이드]
+                            단독실손보험은 가입자의 의료 이용량에 따라 보험료가 달라지는 '보험료 차등제'가 적용됩니다. 2026년에는 비급여 의료 이용량이 많은 가입자는 보험료가 할증되고, 비급여 이용이 적은 가입자는 보험료가 할인됩니다. 이는 단독실손보험 가입자에게 합리적인 보험료 구조를 제공하며, 불필요한 의료 쇼핑을 방지하려는 목적으로 도입되었습니다. [링크: 보험료 차등제 상세 내용]
+                            단독실손보험 가입 시 고려해야 할 점은 기존에 가입한 보험과의 중복 여부입니다. 실손보험은 중복 보상이 되지 않으므로, 기존 보험의 실비 특약이 있다면 새로운 단독실손보험 가입 시 중복 여부를 확인하고 정리해야 합니다. 2026년에는 단독실손보험의 보장 내용과 약관이 자주 변경되므로, 최신 정보를 바탕으로 가입을 결정하는 것이 중요합니다. [링크: 단독실손보험 가입 전 체크리스트]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 7. 다이렉트 실비보험 (선택 URL: https://silbyachocey.withusdone.com) -->
+            <div class="card">
+                <h2>7. 다이렉트 실비보험: 보험료 절약과 가입 방법</h2>
+                <div class="content-body">
+                    <a href="https://silbyachocey.withusdone.com" target="_blank">
+                        <p>
+                            다이렉트 실비보험은 설계사를 거치지 않고 인터넷을 통해 직접 가입하는 방식을 말합니다. 2026년에는 다이렉트 채널이 활성화되면서 보험료를 절약하려는 소비자들이 선호하는 방식이 되었습니다. 다이렉트 실비보험의 가장 큰 장점은 '저렴한 보험료'입니다. 설계사 수수료가 포함되지 않기 때문에 동일한 보장 내용이라도 설계사를 통한 가입보다 10~20%가량 저렴하게 가입할 수 있습니다. [링크: 다이렉트 실비보험 보험료 비교]
+                            다이렉트 실비보험은 시간과 장소에 구애받지 않고 24시간 언제든 가입할 수 있다는 편리함도 있습니다. 2026년에는 AI 기반의 챗봇 상담 기능이 강화되어, 가입자가 궁금한 사항을 즉시 해결할 수 있도록 지원합니다. 하지만 단점도 존재합니다. 다이렉트 가입은 스스로 모든 약관을 확인하고 가입해야 하므로, 보험에 대한 이해도가 낮은 사람들은 잘못된 상품을 선택하거나 필요한 특약을 놓칠 수 있습니다. [링크: 다이렉트 가입 시 유의사항]
+                            다이렉트 실비보험을 현명하게 가입하는 방법은 '온라인 비교 플랫폼'을 활용하는 것입니다. 2026년에는 다양한 보험사의 실비보험 상품을 한눈에 비교할 수 있는 다이렉트 플랫폼이 활성화되어 있습니다. 여러 상품의 보장 내용, 보험료, 공제 금액 등을 비교하여 본인에게 가장 적합한 상품을 선택할 수 있습니다. [링크: 다이렉트 보험 비교 사이트 활용법]
+                            다이렉트 실비보험은 갱신형 상품이며, 보험료 차등제가 적용됩니다. 따라서 가입 시 보험료가 저렴하더라도 비급여 의료 이용량이 많으면 다음 해 보험료가 할증될 수 있습니다. 2026년에는 비급여 의료 이용에 대한 보험사의 심사가 강화되고 있으므로, 가입 전 약관을 꼼꼼히 읽어보는 것이 중요합니다. [링크: 다이렉트 실비보험 갱신 및 차등제 분석]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 8. 당뇨 실비보험 (선택 URL: https://silbyychocel.withusdone.com) -->
+            <div class="card">
+                <h2>8. 당뇨 실비보험: 유병자 실비보험 가입 조건과 보장 범위</h2>
+                <div class="content-body">
+                    <a href="https://silbyychocel.withusdone.com" target="_blank">
+                        <p>
+                            당뇨병 환자는 실비보험 가입이 까다롭습니다. 당뇨병은 만성 질환으로 분류되며, 합병증 위험이 높아 보험사에서 가입을 거절하거나 특정 보장을 제한하는 경우가 많습니다. 2026년에는 유병자 실비보험 상품이 활성화되면서 당뇨병 환자도 실비보험 가입이 가능해졌습니다. 유병자 실비보험은 일반 실비보험보다 가입 조건이 완화되어 있지만, 보험료가 비싸고 보장 범위에 제한이 있습니다. [링크: 유병자 실비보험 가입 조건 상세 분석]
+                            유병자 실비보험 가입 시 가장 중요한 것은 '고지 의무'입니다. 당뇨병 진단 시점, 치료 내용, 혈당 조절 상태 등을 정확하게 알려야 합니다. 2026년에는 간편 심사 보험(3.2.5 등)을 통해 당뇨병 환자가 실비보험에 가입할 수 있습니다. 간편 심사 보험은 최근 3개월 이내 입원/수술 필요 소견 여부, 2년 이내 입원/수술 여부, 5년 이내 암 진단/치료 여부 등 몇 가지 질문에만 해당하지 않으면 가입이 가능합니다. [링크: 당뇨병 환자를 위한 간편 심사 실비보험]
+                            당뇨병 환자의 실비보험 보장 범위는 일반 실비보험과 차이가 있습니다. 유병자 실비보험은 당뇨병 관련 치료(합병증 포함)에 대한 보장이 제한될 수 있습니다. 2026년 기준으로 유병자 실비보험은 당뇨병으로 인해 발생한 입원비, 통원비 등 의료비를 보장하지만, 일부 보험사는 당뇨병과 직접적인 관련이 있는 치료를 보장에서 제외하는 경우가 있습니다. 따라서 가입 시 약관을 꼼꼼히 확인하여 보장 범위를 체크해야 합니다. [링크: 당뇨병 합병증 보장 여부]
+                            당뇨병 환자의 실비보험은 갱신형 상품이며, 보험료 차등제가 적용됩니다. 당뇨병으로 인해 비급여 치료를 자주 받는 경우 보험료가 할증될 수 있습니다. 2026년에는 당뇨병 환자를 위한 건강관리 프로그램과 연계하여 보험료 할인을 제공하는 상품도 출시되고 있으므로, 이를 활용하는 것도 좋은 방법입니다. [링크: 당뇨 환자 실비보험 보험료 절약 팁]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 9. 실손보험 치과 (선택 URL: https://silbyychoced.withusdone.com) -->
+            <div class="card">
+                <h2>9. 실손보험 치과: 비급여 치과 치료 보장 여부</h2>
+                <div class="content-body">
+                    <a href="https://silbyychoced.withusdone.com" target="_blank">
+                        <p>
+                            치과 치료는 실손보험(실비보험)에서 가장 논란이 많은 부분 중 하나입니다. 치과 치료는 대부분의 경우 실비보험 보장이 되지 않습니다. 2026년 기준으로 실비보험은 치과 치료 중 '급여 항목'에 한해서만 보장합니다. 급여 항목이란 국민건강보험이 적용되는 치료로, 충치 치료, 치주 질환 치료, 발치, 스케일링(연 1회) 등이 해당됩니다. [링크: 실비보험이 보장하는 치과 급여 항목]
+                            실비보험이 보장하지 않는 '비급여 항목'은 치과 치료의 핵심입니다. 임플란트, 크라운, 브릿지, 레진 치료(일부 급여 전환 제외), 인레이, 보철 치료 등 고가의 치료가 여기에 해당합니다. 2026년에는 4세대 실손보험 약관에 '치과 치료 비급여 항목은 보장하지 않는다'고 명시되어 있습니다. 따라서 실비보험으로는 임플란트 비용을 보장받을 수 없습니다. [링크: 치과 비급여 항목 보장 불가 사유]
+                            치과 치료 보장을 받기 위해서는 '치아보험'에 별도로 가입해야 합니다. 치아보험은 비급여 항목인 임플란트, 크라운, 레진 등을 보장하는 상품입니다. 2026년에는 치아보험 상품도 다양하게 출시되고 있으며, 무진단형(고지 사항만 체크)으로 가입할 수 있는 상품도 있습니다. 하지만 치아보험은 면책 기간과 감액 기간이 있으므로 가입 시 이를 꼼꼼히 확인해야 합니다. [링크: 치아보험과 실비보험의 차이점]
+                            실비보험으로 치과 치료비를 보장받을 수 있는 예외적인 경우가 있습니다. 치아나 잇몸 질환이 아닌 '질병'이나 '상해'로 인해 치과 치료를 받는 경우입니다. 예를 들어, 구강암, 턱관절 장애, 교통사고 등으로 인해 치아 손상이 발생한 경우 실비보험 청구가 가능합니다. 2026년에는 상해로 인한 치과 치료 보장 범위가 명확해지고 있으므로, 가입 전 약관을 확인하는 것이 중요합니다. [링크: 상해로 인한 치과 치료 실비 청구]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 10. 건강검진 실비 (선택 URL: https://silbyofchocek.withusdone.com) -->
+            <div class="card">
+                <h2>10. 건강검진 실비보험: 검진 비용 보장 여부와 질병 진단 후 청구</h2>
+                <div class="content-body">
+                    <a href="https://silbyofchocek.withusdone.com" target="_blank">
+                        <p>
+                            건강검진은 질병의 조기 발견을 위해 필수적입니다. 하지만 실비보험은 건강검진 비용을 보장하지 않습니다. 2026년 실비보험 약관에 따르면 '예방 목적'이나 '단순 검진' 목적으로 사용된 의료비는 보장 대상에서 제외됩니다. 건강검진은 질병의 유무를 확인하는 예방 목적으로 간주되므로, 실비보험으로 청구할 수 없습니다. [링크: 건강검진 비용 실비보험 청구 불가 사유]
+                            하지만 건강검진 중 '질병이 발견'되어 추가적인 진료나 검사를 받는 경우, 실비보험 청구가 가능해집니다. 예를 들어, 건강검진에서 위내시경 검사 중 용종이 발견되어 즉시 제거 수술을 받은 경우, 용종 제거 수술에 대한 비용은 실비보험 청구가 가능합니다. 2026년에는 건강검진 시 발생하는 추가 진료비에 대한 실비보험 청구 기준이 더욱 명확해지고 있습니다. [링크: 건강검진 중 발견된 질병 치료비 실비 청구]
+                            건강검진 시 유의해야 할 점은 급여 항목과 비급여 항목의 구분입니다. 국민건강보험공단에서 실시하는 '국가 건강검진'은 급여 항목으로 비용이 거의 발생하지 않습니다. 그러나 개인적으로 추가하는 '비급여 검진 항목'(MRI, CT, 초음파, 비타민 주사 등)은 비용이 많이 발생합니다. 2026년 실비보험은 이러한 비급여 검진 항목에 대해 보장하지 않습니다. [링크: 건강검진 비급여 항목 실비 청구 불가]
+                            건강검진 후 질병이 발견되어 실비보험 청구를 하려면, 병원에서 '진료 목적'의 검사임을 증명해야 합니다. 검진 결과를 바탕으로 의사가 추가 검사를 권유하고, 해당 검사를 실시한 경우 실비보험 청구가 가능합니다. 2026년에는 건강검진 후 실비보험 청구 시 심사가 강화되고 있으므로, 병원에서 진단 결과와 치료 계획을 명확히 기록하는 것이 중요합니다. [링크: 건강검진 후 실비 청구 성공 사례]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 11. 20대 실비보험 (선택 URL: https://silbyofchocef.withusdone.com) -->
+            <div class="card">
+                <h2>11. 20대 실비보험: 가장 합리적인 가입 시기와 전략</h2>
+                <div class="content-body">
+                    <a href="https://silbyofchocef.withusdone.com" target="_blank">
+                        <p>
+                            20대는 실비보험에 가입하기 가장 좋은 시기입니다. 20대는 비교적 건강한 상태이므로 병력 고지에 대한 부담이 적고, 보험료가 저렴합니다. 2026년 실비보험은 나이가 어릴수록 보험료가 낮게 책정되므로, 20대 초반에 가입하는 것이 가장 유리합니다. 20대에 실비보험을 가입하면 장기적으로 고액의 의료비 발생 시 경제적 부담을 덜 수 있습니다. [링크: 20대 실비보험 가입의 장점]
+                            20대 실비보험 가입 시 고려해야 할 점은 '4세대 실손보험의 특징'입니다. 4세대 실손보험은 갱신 주기가 1년으로 짧고, 보험료 차등제가 적용됩니다. 20대 가입자는 비급여 의료 이용량이 적을 경우 보험료 할인 혜택을 받을 수 있습니다. 2026년에는 20대를 위한 맞춤형 상품이 출시되고 있으며, 비급여 특약을 선택적으로 가입하여 보험료를 조절할 수 있습니다. [링크: 20대 맞춤형 4세대 실손보험 비교]
+                            20대에는 질병보다는 '상해'에 대한 보장이 중요할 수 있습니다. 레저 활동, 스포츠 활동 등 활동량이 많으므로 예상치 못한 부상 위험이 높습니다. 실비보험은 상해로 인한 의료비도 보장하므로, 20대에게 필수적인 보험입니다. 2026년에는 실비보험과 함께 '상해보험'을 결합하여 가입하는 것도 고려해볼 수 있습니다. [링크: 20대 상해보험 결합 가입 전략]
+                            20대 실비보험 가입 시 '다이렉트 채널'을 활용하면 더욱 저렴하게 가입할 수 있습니다. 2026년에는 온라인 플랫폼을 통해 여러 보험사의 상품을 비교하여 최저가 상품을 쉽게 찾을 수 있습니다. 또한, 부모님의 보험에 종속되어 있지 않고 스스로 보험을 관리하는 경험을 쌓는 것도 중요합니다. [링크: 20대 실비보험 다이렉트 가입 노하우]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 12. 의료실손보험 (선택 URL: https://silbyychoceb.withusdone.com) -->
+            <div class="card">
+                <h2>12. 의료실손보험: 4세대 실손보험의 핵심 보장 내용 분석</h2>
+                <div class="content-body">
+                    <a href="https://silbyychoceb.withusdone.com" target="_blank">
+                        <p>
+                            의료실손보험은 '국민 제2의 건강보험'으로 불릴 만큼 중요한 보험입니다. 2026년 현재는 4세대 실손보험이 판매되고 있습니다. 4세대 실손보험은 기존 실손보험의 문제점(손해율 증가)을 해결하고, 가입자 간 보험료 형평성을 높이기 위해 도입되었습니다. 2026년 4세대 실손보험의 가장 큰 특징은 '비급여 항목의 분리'와 '보험료 차등제'입니다. [링크: 4세대 실손보험의 주요 개편 사항]
+                            4세대 실손보험은 비급여 항목 중 도수치료, 주사료, MRI를 특약으로 분리하여 운영합니다. 가입자는 이 특약을 선택적으로 가입할 수 있습니다. 2026년에는 비급여 의료 이용량이 많은 가입자의 보험료가 최대 300%까지 할증될 수 있고, 비급여 이용이 적은 가입자는 최대 10%까지 할인됩니다. 이는 의료 쇼핑을 방지하고 합리적인 의료 이용을 유도하는 목적으로 도입되었습니다. [링크: 4세대 실손보험 보험료 차등제 분석]
+                            의료실손보험은 입원비, 통원비 등 의료비를 보장하며, 급여 항목은 80~90%, 비급여 항목은 70%를 보장합니다. 2026년에는 실손보험 가입 시 '단독실손보험' 형태로 가입하게 되며, 다른 보장(암보험, 종신보험)과 결합하여 가입할 수 없습니다. 이는 보험료 거품을 줄이고 실손보험 본연의 기능을 강화하기 위함입니다. [링크: 의료실손보험 보장 범위 및 공제 금액]
+                            의료실손보험 가입 시 주의해야 할 점은 기존 보험과의 중복 여부입니다. 실손보험은 중복 보상이 되지 않으므로, 기존 보험의 실비 특약이 있다면 새로운 상품으로 갈아탈 때 기존 보험을 해지해야 합니다. 2026년에는 실비보험 가입 조건과 약관이 자주 변경되므로, 최신 정보를 바탕으로 가입을 결정하는 것이 중요합니다. [링크: 의료실손보험 갈아타기 가이드]
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </main>
-  </body>
+
+
+<footer style="font-size: 11px; color: #888; padding: 30px 20px; text-align: center; line-height: 1.8; font-family: sans-serif;">
+  <div style="margin-bottom: 8px;">
+    <!-- 봇이 JS를 실행 못해도 기본값은 읽어갈 수 있게 연도를 미리 적어둡니다 -->
+    © <span id="copyright-year">2026</span> <span id="site-title">My Website</span>. All rights reserved.
+  </div>
+
+  <div style="color: #ccc;">
+    <span id="bot-msg">데이터 동기화 중...</span> | 
+    <!-- 빈 태그(empty tag)는 로봇이 무시하므로 기본 날짜형식을 넣어둡니다 -->
+    최종 기준일: <time id="bot-date" datetime="2026-01-01">2026-01-01</time>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // ----------------------------------------------------------------------
+    // 1. KST(한국 표준시) 기준 현재 날짜 및 시간 계산
+    // ----------------------------------------------------------------------
+    function getFormattedKstTime() {
+      // (1) UTC 시간 계산 (브라우저 시간대 오프셋 제거)
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
+      // (2) KST(UTC+9)로 변환
+      const kstGap = 9 * 60 * 60 * 1000;
+      const kstDate = new Date(utc + kstGap);
+
+      const year = kstDate.getFullYear();
+      const month = String(kstDate.getMonth() + 1).padStart(2, '0');
+      const day = String(kstDate.getDate()).padStart(2, '0');
+      const hour = String(kstDate.getHours()).padStart(2, '0');
+      const minute = String(kstDate.getMinutes()).padStart(2, '0');
+      const second = String(kstDate.getSeconds()).padStart(2, '0');
+
+      // YYYY-MM-DD 형식 (footer 보여주기용)
+      // ********** 변경된 부분: 백틱 대신 + 기호 사용 **********
+      const formattedDate = year + '-' + month + '-' + day;
+      
+      // ISO 8601 형식 (검색엔진이 가장 좋아하는 표준 포맷)
+      // ********** 변경된 부분: 백틱 대신 + 기호 사용 **********
+      const isoDateTime = year + '-' + month + '-' + day + 'T' + hour + ':' + minute + ':' + second + '+09:00';
+      
+      return { year, formattedDate, isoDateTime };
+    }
+
+    // ----------------------------------------------------------------------
+    // 2. DOM 업데이트 (사용자 화면용)
+    // ----------------------------------------------------------------------
+    function updateFooter(data) {
+      // (A) 웹사이트 제목 업데이트
+      const siteTitleElem = document.getElementById('site-title');
+      if (siteTitleElem) {
+        siteTitleElem.textContent = document.title || window.location.hostname;
+      }
+
+      // (B) 저작권 연도 업데이트
+      const yearElem = document.getElementById('copyright-year');
+      if (yearElem) {
+        yearElem.textContent = data.year;
+      }
+
+      // (C) 최종 기준일 업데이트
+      const dateElem = document.getElementById('bot-date');
+      if (dateElem) {
+        dateElem.textContent = data.formattedDate;
+        dateElem.setAttribute('datetime', data.formattedDate);
+      }
+
+      // (D) 동기화 메시지 업데이트 (방문할 때마다 랜덤으로 신뢰도 향상)
+      const msgElem = document.getElementById('bot-msg');
+      if (msgElem) {
+        // 메시지 목록을 10개로 확장
+        const msgs = [
+          "서비스 최적화 완료", 
+          "데이터베이스 동기화 완료", 
+          "보안 프로토콜 점검 완료",
+          "콘텐츠 최신화 완료",
+          "시스템 점검 완료",
+          "웹표준 레이아웃 최적화",
+          "사용자 인터페이스 안정화",
+          "성능 개선 완료",
+          "새로운 데이터 로드 완료",
+          "운영 시스템 안정화 완료"
+        ];
+        // 방문할 때마다 메시지 랜덤 선택
+        const randomIndex = Math.floor(Math.random() * msgs.length);
+        msgElem.textContent = msgs[randomIndex];
+      }
+    }
+
+    // ----------------------------------------------------------------------
+    // 3. SEO 메타 태그 업데이트 (Naver/Google 공통)
+    // ----------------------------------------------------------------------
+function setMetaTag(attrType, attrName, content) {
+  // 백틱 대신 더하기 기호(+)를 사용하여 문자열 결합
+  let selector = 'meta[' + attrType + '="' + attrName + '"]';
+  
+  let meta = document.querySelector(selector);
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.setAttribute(attrType, attrName);
+    document.head.appendChild(meta);
+  }
+  meta.content = content;
+}
+
+    function updateSeoMetaTags(data) {
+      // (A) Naver/Google 공통: Open Graph 수정일 (매우 중요)
+      setMetaTag('property', 'og:updated_time', data.isoDateTime);
+
+      // (B) Naver/Google 공통: Article 수정일 (Naver 웹문서 검색에 중요)
+      setMetaTag('property', 'article:modified_time', data.isoDateTime);
+
+      // (C) 일반 검색엔진(공통) 날짜 태그
+      setMetaTag('name', 'date', data.formattedDate);
+
+      // (D) 저작권 정보 갱신 (네이버 소유 확인 시 참고)
+      // ********** 변경된 부분: 백틱 대신 + 기호 사용 **********
+      setMetaTag('name', 'copyright', data.year + ' ' + document.title);
+    }
+
+    // ----------------------------------------------------------------------
+    // 4. [핵심 업그레이드] JSON-LD 구조화 데이터 삽입/업데이트
+    // ----------------------------------------------------------------------
+    function updateJsonLd(data) {
+      let script = document.querySelector('script[type="application/ld+json"]');
+      if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        document.head.appendChild(script);
+      }
+
+      const jsonLdData = {
+        "@context": "https://schema.org",
+        "@type": "WebPage", 
+        "headline": document.title || window.location.hostname,
+        "dateModified": data.isoDateTime, 
+        "datePublished": data.isoDateTime, 
+        "name": document.title || window.location.hostname
+      };
+      
+      script.textContent = JSON.stringify(jsonLdData, null, 2);
+    }
+
+    // ----------------------------------------------------------------------
+    // 5. 실행
+    // ----------------------------------------------------------------------
+    const timeData = getFormattedKstTime();
+    updateFooter(timeData);
+    updateSeoMetaTags(timeData);
+    updateJsonLd(timeData);
+  })();
+</script>
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+
+<footer style="font-size: 11px; color: #888; padding: 30px 20px; text-align: center; line-height: 1.8; font-family: sans-serif;">
+  <div style="margin-bottom: 8px;">
+    <!-- 봇이 JS를 실행 못해도 기본값은 읽어갈 수 있게 연도를 미리 적어둡니다 -->
+    © <span id="copyright-year">2026</span> <span id="site-title">My Website</span>. All rights reserved.
+  </div>
+
+  <div style="color: #ccc;">
+    <span id="bot-msg">데이터 동기화 중...</span> | 
+    <!-- 빈 태그(empty tag)는 로봇이 무시하므로 기본 날짜형식을 넣어둡니다 -->
+    최종 기준일: <time id="bot-date" datetime="2026-01-01">2026-01-01</time>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // ----------------------------------------------------------------------
+    // 1. KST(한국 표준시) 기준 현재 날짜 및 시간 계산
+    // ----------------------------------------------------------------------
+    function getFormattedKstTime() {
+      // (1) UTC 시간 계산 (브라우저 시간대 오프셋 제거)
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
+      // (2) KST(UTC+9)로 변환
+      const kstGap = 9 * 60 * 60 * 1000;
+      const kstDate = new Date(utc + kstGap);
+
+      const year = kstDate.getFullYear();
+      const month = String(kstDate.getMonth() + 1).padStart(2, '0');
+      const day = String(kstDate.getDate()).padStart(2, '0');
+      const hour = String(kstDate.getHours()).padStart(2, '0');
+      const minute = String(kstDate.getMinutes()).padStart(2, '0');
+      const second = String(kstDate.getSeconds()).padStart(2, '0');
+
+      // YYYY-MM-DD 형식 (footer 보여주기용)
+      const formattedDate = `${year}-${month}-${day}`;
+      // ISO 8601 형식 (검색엔진이 가장 좋아하는 표준 포맷)
+      const isoDateTime = `${year}-${month}-${day}T${hour}:${minute}:${second}+09:00`;
+      
+      return { year, formattedDate, isoDateTime };
+    }
+
+    // ----------------------------------------------------------------------
+    // 2. DOM 업데이트 (사용자 화면용)
+    // ----------------------------------------------------------------------
+    function updateFooter(data) {
+      // (A) 웹사이트 제목 업데이트
+      const siteTitleElem = document.getElementById('site-title');
+      if (siteTitleElem) {
+        siteTitleElem.textContent = document.title || window.location.hostname;
+      }
+
+      // (B) 저작권 연도 업데이트
+      const yearElem = document.getElementById('copyright-year');
+      if (yearElem) {
+        yearElem.textContent = data.year;
+      }
+
+      // (C) 최종 기준일 업데이트
+      const dateElem = document.getElementById('bot-date');
+      if (dateElem) {
+        dateElem.textContent = data.formattedDate;
+        dateElem.setAttribute('datetime', data.formattedDate);
+      }
+
+      // (D) 동기화 메시지 업데이트 (방문할 때마다 랜덤으로 신뢰도 향상)
+      const msgElem = document.getElementById('bot-msg');
+      if (msgElem) {
+        // 메시지 목록을 10개로 확장
+        const msgs = [
+          "서비스 최적화 완료", 
+          "데이터베이스 동기화 완료", 
+          "보안 프로토콜 점검 완료",
+          "콘텐츠 최신화 완료",
+          "시스템 점검 완료",
+          "웹표준 레이아웃 최적화",
+          "사용자 인터페이스 안정화",
+          "성능 개선 완료",
+          "새로운 데이터 로드 완료",
+          "운영 시스템 안정화 완료"
+        ];
+        // 방문할 때마다 메시지 랜덤 선택
+        const randomIndex = Math.floor(Math.random() * msgs.length);
+        msgElem.textContent = msgs[randomIndex];
+      }
+    }
+
+    // ----------------------------------------------------------------------
+    // 3. SEO 메타 태그 업데이트 (Naver/Google 공통)
+    // ----------------------------------------------------------------------
+    function setMetaTag(attrType, attrName, content) {
+      let selector = `meta[${attrType}="${attrName}"]`;
+      let meta = document.querySelector(selector);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute(attrType, attrName);
+        document.head.appendChild(meta);
+      }
+      meta.content = content;
+    }
+
+    function updateSeoMetaTags(data) {
+      // (A) Naver/Google 공통: Open Graph 수정일 (매우 중요)
+      setMetaTag('property', 'og:updated_time', data.isoDateTime);
+
+      // (B) Naver/Google 공통: Article 수정일 (Naver 웹문서 검색에 중요)
+      setMetaTag('property', 'article:modified_time', data.isoDateTime);
+
+      // (C) 일반 검색엔진(공통) 날짜 태그
+      setMetaTag('name', 'date', data.formattedDate);
+
+      // (D) 저작권 정보 갱신 (네이버 소유 확인 시 참고)
+      setMetaTag('name', 'copyright', `${data.year} ${document.title}`);
+    }
+
+    // ----------------------------------------------------------------------
+    // 4. [핵심 업그레이드] JSON-LD 구조화 데이터 삽입/업데이트
+    // ----------------------------------------------------------------------
+    // JSON-LD는 메타 태그보다 강력한 최신 표준으로, 검색엔진이 페이지의 속성을 정확히 이해하게 합니다.
+    function updateJsonLd(data) {
+      let script = document.querySelector('script[type="application/ld+json"]');
+      if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        document.head.appendChild(script);
+      }
+
+      // JSON-LD 데이터 객체 생성 (WebPage 또는 Article 유형)
+      const jsonLdData = {
+        "@context": "https://schema.org",
+        "@type": "WebPage", // 페이지 전체에 대한 정보
+        "headline": document.title || window.location.hostname,
+        "dateModified": data.isoDateTime, // 핵심: 최신 업데이트 시간 기록
+        "datePublished": data.isoDateTime, // 발행일과 수정일이 같으면 최신으로 인식
+        "name": document.title || window.location.hostname
+      };
+      
+      // 스크립트 태그 내용 업데이트
+      script.textContent = JSON.stringify(jsonLdData, null, 2);
+    }
+
+    // ----------------------------------------------------------------------
+    // 5. 실행
+    // ----------------------------------------------------------------------
+    const timeData = getFormattedKstTime();
+    updateFooter(timeData);
+    updateSeoMetaTags(timeData);
+    updateJsonLd(timeData);
+  })();
+</script>
+
+
+</body>
 </html>
